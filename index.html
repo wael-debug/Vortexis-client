@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vortexis Client</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+    background: url('PUT-YOUR-IMAGE-HERE.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.5);
+}
+
+h1 {
+    font-size: 60px;
+    color: #c77dff;
+}
+
+.ip {
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+button {
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.join { background: #00c853; }
+.download { background: #7b2cbf; }
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>VORTEXIS</h1>
+    <p>Next Level Minecraft PvP Experience</p>
+
+    <div class="ip">
+        IP: play.vortexis.net <br>
+        PORT: 19132
+    </div>
+
+    <button class="join" onclick="copyIP()">Copy IP</button>
+    <button class="download">Download Client</button>
+</div>
+
+<script>
+function copyIP() {
+    navigator.clipboard.writeText("play.vortexis.net");
+    alert("IP Copied!");
+}
+</script>
+
+</body>
+</html>
